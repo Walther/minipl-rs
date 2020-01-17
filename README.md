@@ -14,7 +14,9 @@ Interpreter for the pedagogic language Mini-PL, for the Compilers course at Univ
 
 [Syntax PDF](https://www.cs.helsinki.fi/u/vihavain/k20/Compilers/Project/Mini%20pl%20syntax%202020.pdf)
 
-**BNF**:
+Some brief details outlined below.
+
+**EBNF**:
 
 ```BNF
 <prog>   ::=  <stmts>
@@ -45,3 +47,11 @@ Interpreter for the pedagogic language Mini-PL, for the Compilers course at Univ
           "var" | "for" | "end" | "in" | "do" | "read" |
           "print" | "int" | "string" | "bool" | "assert"
  ```
+
+**Operators**:
+
+```
++ - * / < = & !
+```
+
+> There is one unary operator symbol (`<unary_op>`): `!`, meaning the logical not operation. The operator symbol '&' stands for the logical and operation. Note that in Mini-PL, `=` is the equal operator - not assignment. 
